@@ -1,0 +1,274 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qsxcd.just_walk_out.PayWayFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="납부방법 관리"
+                android:textSize="20dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나의 요금 납부 방법"
+                android:textSize="16dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="20dp"/>
+
+            <TableLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#efefef">
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:padding="10dp"
+                        android:text="계좌번호"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ac_num"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginTop="2dp"
+                        android:padding="10dp"
+                        android:text="0123456789"
+                        android:textSize="16dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:textColor="#000000"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="#efefef">
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:padding="10dp"
+                        android:text="은행명"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/bank"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:padding="10dp"
+                        android:text="국민은행"
+                        android:textSize="16dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:textColor="#000000"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="요금 납부 정보 변경"
+                android:textSize="16dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="28dp"/>
+
+            <TableLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#efefef">
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:padding="10dp"
+                        android:text="은행명*"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/new_bank"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginTop="2dp"
+                        android:padding="10dp"
+                        android:hint="ex) KB국민은행"
+                        android:textSize="16sp"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:textColorHint="#000000"/>
+                </TableRow>
+
+                <TableRow
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="#efefef">
+                <TextView
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:text="계좌번호*"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/new_ac_num"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:hint="숫자만 입력하세요"
+                    android:textSize="16dp"
+                    android:textAlignment="textEnd"
+                    android:gravity="end"
+                    android:textColorHint="#000000"
+                    android:inputType="number"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="#efefef">
+                <TextView
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:text="예금주*"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/new_ac_holder"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:padding="10dp"
+                    android:hint="ex) 김한성"
+                    android:textSize="16sp"
+                    android:textAlignment="textEnd"
+                    android:gravity="end"
+                    android:textColorHint="#000000"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="#efefef">
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:padding="10dp"
+                        android:text="주민등록번호*"
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/new_reg_num"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:padding="10dp"
+                        android:hint="숫자만 입력하세요"
+                        android:textSize="16sp"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:textColorHint="#000000"
+                        android:inputType="number"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동출금 이용 동의"
+                android:textSize="16dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="28dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동 출금 서비스 이용에 동의합니다."
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/changebtn"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="확인"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/background_login"
+                    android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/cancelhome"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="취소"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/background_login"
+                    android:layout_marginBottom="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

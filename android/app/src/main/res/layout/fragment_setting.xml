@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qsxcd.just_walk_out.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내계정"
+            android:textSize="12sp"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="30dp"/>
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="2dp"
+            android:background="#efefef"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/Useremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용자이메일주소"
+                android:textSize="16sp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:id="@+id/logoutTextbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="로그아웃"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_gravity="end"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/autoLoginSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자동로그인"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="2dp"
+            android:background="#efefef"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/mypageTextbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내정보관리"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"/>
+
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="2dp"
+            android:background="#efefef"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앱 환경설정"
+            android:textSize="12sp"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="30dp"/>
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="2dp"
+            android:background="#efefef"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Switch
+            android:id="@+id/PushSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Push 메세지 수신"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="2dp"
+            android:background="#efefef"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버전정보"
+            android:textSize="12sp"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="30dp"/>
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="2dp"
+            android:background="#efefef"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재버전"
+                android:textSize="14sp"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="1.0.0"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_gravity="end"
+                android:layout_marginRight="30dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="2dp"
+            android:background="#efefef"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</FrameLayout>

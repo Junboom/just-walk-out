@@ -1,0 +1,323 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qsxcd.just_walk_out.MyPageFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/face"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:id="@+id/main_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="김한성"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="님"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="340dp"
+                android:layout_height="3dp"
+                android:background="#efefef"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="계정정보"
+                android:textSize="12sp"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="30dp"/>
+
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#efefef"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RFID-Card ID"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/myrfid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="AA11DD22GG33"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="30dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#efefef"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/myemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="hansung@gmail.com"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="30dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#efefef"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전화번호"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:id="@+id/myphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="01012345678"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="30dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#efefef"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="생년월일"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:id="@+id/mybirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="2018년5월17일"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="30dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#efefef"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="본인인증"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:id="@+id/myname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="김한성"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginRight="30dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인증일자"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="2018.05.05"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginRight="30dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="본인인증정보는 사용자 확인을 위한 목적으로만 활용되며 변경할 수 없습니다."
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#efefef"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/changepwfrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="계정 비밀번호 변경"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="30dp"/>
+
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#efefef"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카드 일시정지 및 분실신고"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="30dp"/>
+
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#efefef"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서비스 해제"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="30dp"/>
+
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#efefef"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

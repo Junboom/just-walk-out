@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black"
+            android:title="홈" />
+        <item
+            android:id="@+id/nav_viewPay"
+            android:icon="@drawable/ic_credit_card_black"
+            android:title="요금조회및납부" />
+        <item
+            android:id="@+id/nav_myPage"
+            android:icon="@drawable/ic_person_black"
+            android:title="내정보관리" />
+        <item
+            android:id="@+id/nav_customerSupport"
+            android:icon="@drawable/ic_headset_mic_black"
+            android:title="고객센터" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_black"
+            android:title="설정" />
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/ic_exit_to_app_black"
+            android:title="로그아웃" />
+    </group>
+
+</menu>

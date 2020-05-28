@@ -1,0 +1,524 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qsxcd.just_walk_out.PayFragment">
+
+
+    <TabHost
+        android:id="@+id/TabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="청구년월"
+                            android:textSize="18sp"/>
+
+                        <Spinner
+                            android:id="@+id/paydate_spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이용기간"
+                            android:textSize="18sp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="2018년 3월 1일"
+                                android:textSize="18sp"
+                                android:textColor="#000000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="~"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="2018년 3월 31일"
+                                android:textSize="18sp"
+                                android:textColor="#000000"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요금"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="50,000원"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:gravity="right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:text="승차요금"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="40,000원"
+                            android:textSize="18sp"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:text="하차요금"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="10,000원"
+                            android:textSize="18sp"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="청구금액"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="50,000원"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:gravity="right"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="납부정보"
+                        android:textSize="14sp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RFID-Card ID 번호"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/custom_rfid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="RFID-Card ID"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:layout_gravity="end"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="전화번호"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="106dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/custom_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="01012345678"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:layout_gravity="end"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이용기간"
+                            android:textSize="16sp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="2018년 3월 1일"
+                                android:textSize="18sp"
+                                android:textColor="#000000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="~"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="2018년 3월 31일"
+                                android:textSize="18sp"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="납기일"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="2018.05.30"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:layout_gravity="end"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="납부방법"
+                            android:textSize="16dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/custom_bank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="OO은행"
+                                android:textColorHint="#000000"
+                                android:textColor="#000000"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:id="@+id/custom_bank_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="계좌번호"
+                                android:textColorHint="#000000"
+                                android:textColor="#000000"
+                                android:textSize="18sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="예금주명"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/custom_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="김한성"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:layout_gravity="end"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="340dp"
+                        android:layout_height="2dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="출금일"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="2018.05.23"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:layout_gravity="end"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button_bank_change"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/background_login"
+                        android:text="은행 변경하기"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</FrameLayout>
